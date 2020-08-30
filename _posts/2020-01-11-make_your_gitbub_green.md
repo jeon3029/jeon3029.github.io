@@ -1,6 +1,11 @@
+---
+title: Github 매일 올리기 목표 달성위한 Plugin 설치
+date: 2020-08-30 12:32:00 -0400
+categories: github
+---
 # Github 매일 올리기 목표 달성위한 Plugin 설치
 
-### 참고문헌 : [1일1커밋 목표로하기](https://fernando.kr/20)
+   참고문헌 : [1일1커밋 목표로하기](https://fernando.kr/20)
 
 ## 개요
 - 누구나 github를 잘 관리하는것을 목표로 하지만 생각보다 잘 되지 않는다. 
@@ -13,20 +18,27 @@
 $ brew cask install bitbar
 ```
 - 해당 오픈소스 소프트웨어는 맥 상단 메뉴바에 위치하며 다양한 사용자들이 올려놓은 플러그인을 설치할 수 있다.
+  
 #### 1.2 Setting Plugin Path
 - 사용자가 원하는 위치에 plugin path를 설정할 수 있으며, 해당 폴더에 플러그인 소스가 다운로드 된다.
+  
 ### 2. Github plugin Download
 - Link : [Download github plugin](https://getbitbar.com/plugins/Dev/GitHub/github-contribution.10m.rb)
 - Add to Bitbar 하게 되면 자동으로 plugin 폴더에 다운로드 된다.
+  
 ### 3. Setting plugin
+
 #### 3.1 .bitbarrc 파일 생성
+
 ```shell
 $ vi ~/.bitbarrc
 ```
+
 > ;# ~/.bitbarrc 
-> [github_contribution] </br>
-> username = GITHUB_ID_HERE </br>
-> max_contributions = 10  </br>
+> [github_contribution] 
+> username = GITHUB_ID_HERE 
+> max_contributions = 10  
+
 - 해당 파일을 생성해 주고 내용을 수정한다(자신의 github id)
 
 #### 4. 완료
