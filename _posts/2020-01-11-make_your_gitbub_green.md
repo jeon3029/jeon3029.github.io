@@ -6,7 +6,7 @@ categories: github
 - 참고문헌 : [1일1커밋 목표로하기](https://fernando.kr/20)
 
 ## 개요
-![image](./images/github_green.png)
+![image](/_posts/images/github_green.png)
 - 누구나 github를 잘 관리하는것을 목표로 하지만 생각보다 잘 되지 않는다. 
 - 최소한 1일 1커밋을 달성하면서 github와 친숙해지고 이를 잊어버리지 않고자 하는 plugin을 소개하려 한다.(Mac OS 기준)
 
