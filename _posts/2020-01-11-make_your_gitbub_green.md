@@ -39,7 +39,7 @@ $ brew cask install bitbar
    ;# ~/.bitbarrc 
    [github_contribution] 
    username = GITHUB_ID_HERE 
-    max_contributions = 10  
+   max_contributions = 10  
    ```
    - username 에 자신의 github id를 입력해 준다
 
