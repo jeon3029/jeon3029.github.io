@@ -29,17 +29,19 @@ $ brew cask install bitbar
 ### 3. Setting plugin
 
 #### 3.1 .bitbarrc 파일 생성
-
-```shell
-$ vi ~/.bitbarrc
-```
-
-> ;# ~/.bitbarrc 
-> [github_contribution] 
-> username = GITHUB_ID_HERE 
-> max_contributions = 10  
-
-- 해당 파일을 생성해 주고 내용을 수정한다(자신의 github id)
+1. 
+   ```shell
+   $ vi ~/.bitbarrc
+   ```
+   - .bitbarrc 파일을 생성해 준다.
+2. 
+   ```text
+   ;# ~/.bitbarrc 
+   [github_contribution] 
+   username = GITHUB_ID_HERE 
+    max_contributions = 10  
+   ```
+   - username 에 자신의 github id를 입력해 준다
 
 #### 4. 완료
 - BitBar 를 referesh 해주게 되면 최근 10일간의 커밋이 되었는지 안되었는지 보이게 되며, 갯수는 옵션(위의 10) 으로 조정할 수 있다.
