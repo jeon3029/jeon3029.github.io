@@ -108,14 +108,14 @@ analytics:
 # Site Author
 author:
   name             : "jeon3029"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "새내기 개발자의 기술 블로그."
   location         : "Seoul, Korea"
   email            : jeon3029@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:jeon3029@naver.com
+      #url: mailto:jeon3029@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
