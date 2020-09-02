@@ -32,7 +32,7 @@ categories: markdown
 
 ### 2.2. 인용(Quote)
 - 인용문을 작성할 때 사용한다.(중첩할 수도 있다.)
-```
+```text
 > This is a first blockqute.
 >	> This is a second blockqute.
 >	>	> This is a third blockqute.
@@ -45,7 +45,7 @@ categories: markdown
 ---
 1.  순서있는 목록을 작성한다.<br>
    
-  ```
+  ```text
   1. 첫번째
   2. 두번째
   3. 세번째
@@ -56,7 +56,8 @@ categories: markdown
   3. 세번째
 ---
 2.  순서없는 목록을 작성한다.<br>
-  ```
+   
+  ```text
   * 1단계
     - 2단계
       + 3단계
@@ -68,3 +69,133 @@ categories: markdown
       + 3단계
         + 4단계
 - 혼합하여 사용할 수있고 하나만 사용해도 된다.
+
+### 2.4 코드
+
+#### 2.4.1 프로그램 소스코드
+- "\```" 를 사용하여 앞뒤에 묶으면 코드를 첨부할 수 있다.
+
+<pre>
+<code>
+```cpp
+#include<iostream>
+int main(){
+  cout<<"Hello World!";
+  return 0;
+}
+```
+</code>
+</pre>
+
+```cpp
+#include<iostream>
+int main(){
+  cout<<"Hello World!";
+  return 0;
+}
+```
+
+#### 2.4.2 수평선 만들기
+- 각 구역별로 나누어 줄 때 사용한다.
+
+```
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+```
+
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+### 2.5 링크
+- 링크를 삽입할 때 사용한다.
+
+#### 2.5.1 참조링크
+```
+[link name][id]
+[id]:URL "Optional Title(On Hover)"
+
+// code
+Link: [Google][googlelink]
+[googlelink]: https://google.com "Go google"
+```
+- 사용 예
+  - Link: [Google][googlelink]
+
+[googlelink]: https://google.com "Go google"
+
+#### 2.5.2 외부링크
+```
+[Title](link)
+
+//code
+[Google](https://google.com, "google link")
+```
+- 사용 예
+  - Link: [Google](https://google.com, "google link")
+
+#### 2.5.3 자동연결
+```
+일반적인 URL 혹은 이메일주소인 경우 적절한 형식으로 링크를 형성한다.
+
+* 외부링크: <http://example.com/>
+* 이메일링크: <address@example.com>
+```
+
+* 외부링크: <http://example.com/>
+* 이메일링크: <address@example.com>
+
+### 2.6 강조
+```
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+```
+
+* *single asterisks*
+* _single underscores_
+* **double asterisks**
+* __double underscores__
+* ~~cancelline~~
+
+> ```문장 중간에 사용할 경우에는 **띄어쓰기** 를 사용하는 것이 좋다.```   
+> 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
+
+### 2.7 이미지 삽입
+- img, gif 모두 동일하다
+```
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+```
+
+![카카오 라이언](https://t1.kakaocdn.net/kakaocorp/main/kakao10/img/asset03.png)
+![카카오 라이언](https://t1.kakaocdn.net/kakaocorp/main/kakao10/img/asset03.png "라이언")
+
+- 사이즈 조절은 html코드 ```<img width="" height=""></img>```를 이용한다.
+
+예
+```
+<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Kakao Rion"></img><br/>
+
+<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="Kakao Rion"></img>
+```
+
+<img src="https://t1.kakaocdn.net/kakaocorp/main/kakao10/img/asset03.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Kakao Rion"></img><br/>
+
+<img src="https://t1.kakaocdn.net/kakaocorp/main/kakao10/img/asset03.png" width="40%" height="30%" title="%(비율) 크기 설정" alt="Kakao Rion"></img>
+
