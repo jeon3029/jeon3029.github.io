@@ -73,19 +73,16 @@ categories: markdown
 ### 2.4 코드
 
 #### 2.4.1 프로그램 소스코드
-- "\```" 를 사용하여 앞뒤에 묶으면 코드를 첨부할 수 있다.
-
-<pre>
-<code>
-```cpp
-#include<iostream>
-int main(){
-  cout<<"Hello World!";
-  return 0;
-}
+- "\```" 를 사용하여 앞뒤에 묶으면 코드를 첨부할 수 있다. (예시에서 '\\'는 무시)
 ```
-</code>
-</pre>
+\ ```cpp
+\ #include<iostream>
+\ int main(){
+\   cout<<"Hello World!";
+\   return 0;
+\ }
+\ ```
+```
 
 ```cpp
 #include<iostream>
@@ -195,7 +192,11 @@ __double underscores__
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="Kakao Rion"></img>
 ```
 
-<img src="https://t1.kakaocdn.net/kakaocorp/main/kakao10/img/asset03.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Kakao Rion"></img><br/>
+<img src="https://t1.kakaocdn.net/kakaocorp/main/kakao10/img/asset03.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Kakao Rion"></img>
 
 <img src="https://t1.kakaocdn.net/kakaocorp/main/kakao10/img/asset03.png" width="40%" height="30%" title="%(비율) 크기 설정" alt="Kakao Rion"></img>
 
+## 참고
+
+- [참고문헌1 마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+- [참고문헌1 마크다운 사용법](https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017)
